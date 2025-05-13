@@ -1,77 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Blogs - Zahira</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blog | Zahira</title>
+    <!-- Panggil file CSS eksternal -->
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Kanit:400,700&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
+    <!-- Navigation -->
+    <nav>
         <div class="logo">
-            <img src="logo.png" alt="Logo">
+            <img src="assets/logo.png" alt="Logo Zaa" />
         </div>
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="blog.html" class="active">Blog</a>
-            <a href="moments.html">Moments</a>
-            <a href="contact.html">Contact</a>
-        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="blog.html" class="active">Blog</a></li>
+            <li><a href="moments.html">Moments</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
     </nav>
 
     <!-- Blog Section -->
-    <section class="blog">
+    <section class="blog-section">
         <div class="blog-header">
-            <h1>Blogs</h1>
             <h2>Insight from <span>My Blogs</span></h2>
         </div>
-
-        <div class="blog-grid">
-            <!-- Blog Post 1 -->
+        <div class="blog-list">
             <div class="blog-card">
-                <div class="blog-image">
-                    <img src="makeup-tools.jpg" alt="Makeup Tools">
-                </div>
-                <div class="blog-content">
-                    <div class="blog-category">
-                        <span>Makeup</span>
-                        <span class="date">08 April 2025</span>
+                <img src="assets/blog1.png" alt="Makeup Product Review" />
+                <div class="blog-card-content">
+                    <div class="blog-tags">
+                        <span class="blog-tag">Makeup</span>
+                        <span class="blog-date">08 April 2025</span>
                     </div>
-                    <h3>Favorite Product Review - Discuss the advantages and disadvantages of the product</h3>
-                    <p>Testing a suitable makeup product is not easy, but this product is worth every penny and here's why by product...</p>
+                    <h3>Favorite Product Review – Dissect the advantages and disadvantages of the product</h3>
+                    <p>Finding a suitable makeup product is not easy, but this product is often touted as a brand whose lip products…</p>
                 </div>
             </div>
-
-            <!-- Blog Post 2 -->
             <div class="blog-card">
-                <div class="blog-image">
-                    <img src="marketing-tools.jpg" alt="Marketing Tools">
-                </div>
-                <div class="blog-content">
-                    <div class="blog-category">
-                        <span>Marketing</span>
-                        <span class="date">16 April 2025</span>
+                <img src="assets/blog2.png" alt="Beauty Brand Digital Marketing" />
+                <div class="blog-card-content">
+                    <div class="blog-tags">
+                        <span class="blog-tag">Marketing</span>
+                        <span class="blog-date">16 April 2025</span>
                     </div>
                     <h3>Beauty Brand Digital Marketing Strategy</h3>
-                    <p>In the digital era, beauty brands not only sell their products but also the right marketing strategy. From viral campaigns to brand collaborations with beauty influencer...</p>
+                    <p>In the digital era, beauty brands not only rely on quality products, but also the right marketing strategy. From viral campaigns on TikTok, collaborations with beauty influencers…</p>
                 </div>
             </div>
-
-            <!-- Blog Post 3 -->
             <div class="blog-card">
-                <div class="blog-image">
-                    <img src="ecommerce-comparison.jpg" alt="E-commerce vs Offline Store">
-                </div>
-                <div class="blog-content">
-                    <div class="blog-category">
-                        <span>E-commerce</span>
-                        <span class="date">24 April 2025</span>
+                <img src="assets/blog3.png" alt="E-commerce vs Offline Store" />
+                <div class="blog-card-content">
+                    <div class="blog-tags">
+                        <span class="blog-tag">ecommerce</span>
+                        <span class="blog-date">24 April 2025</span>
                     </div>
-                    <h3>E-commerce vs Offline Cosmetic Stores - Difference in Marketing Strategy</h3>
-                    <p>In the beauty industry, choosing the right marketing strategy is crucial. Online vs offline has its own advantages...</p>
+                    <h3>E-commerce vs Offline Cosmetic Stores – Differences in Marketing Strategy</h3>
+                    <p>In the beauty industry, brands have to customize their marketing strategies according to the platform used. Online sales through e-commerce rely on digital ads, influencer…</p>
                 </div>
             </div>
         </div>
@@ -81,10 +71,10 @@
     <footer>
         <div class="footer-content">
             <div class="footer-logo">
-                <img src="logo.png" alt="Logo">
+                <img src="assets/logo.png" alt="Logo Zaa" />
                 <h3>Let's <span>Connect</span> With Zaa</h3>
             </div>
-            <div class="footer-links">
+            <div class="footer-sections">
                 <div class="navigation">
                     <h4>Navigation</h4>
                     <ul>
@@ -98,22 +88,22 @@
                 </div>
                 <div class="contact-info">
                     <h4>Contact</h4>
-                    <p>+62 812 4345 6680</p>
-                    <p>zahiraa232@gmail.com</p>
+                    <p>+62 812 4346 6680</p>
+                    <p>zahiraay232@gmail.com</p>
                     <p>Makassar, South Sulawesi</p>
                 </div>
                 <div class="newsletter">
                     <h4>Get the latest information</h4>
-                    <div class="email-input">
-                        <input type="email" placeholder="Email Address">
-                        <button type="submit">→</button>
-                    </div>
+                    <form class="email-input">
+                        <input type="email" placeholder="Email Address" required />
+                        <button type="submit">&#8594;</button>
+                    </form>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>Copyright © 2025 Zahira. All Right Reserved.</p>
-                <p>User Terms & Conditions</p>
-            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>Copyright &copy; 2025 Zahira. All Right Reserved.</span>
+            <a href="#">User Terms & Conditions</a>
         </div>
     </footer>
 </body>

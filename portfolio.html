@@ -1,104 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio - Zahira</title>
+    <title>Portfolio - Fakhira Az Zahira</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="logo">
-            <img src="logo.png" alt="Logo">
-        </div>
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="portfolio.html" class="active">Portfolio</a>
-            <a href="blog.html">Blog</a>
-            <a href="moments.html">Moments</a>
-            <a href="contact.html">Contact</a>
-        </div>
-    </nav>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="assets/logo.png" alt="Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="#moments">Moments</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- Portfolio Section -->
-    <section class="portfolio">
-        <div class="portfolio-header">
-            <h1>My Portfolio</h1>
-            <h2>Let's Have a Look<br>at <span>My Portfolio</span></h2>
-        </div>
-
-        <div class="portfolio-grid">
-            <!-- Project 1 -->
-            <div class="portfolio-card">
-                <div class="card-image">
-                    <img src="succulente.png" alt="Succulente Project">
-                </div>
-                <div class="card-content">
-                    <div class="tags">
-                        <span class="tag">UX/UI Design</span>
-                        <span class="tag">Web Design</span>
+    <main>
+        <section class="portfolio">
+            <div class="portfolio-header">
+                <h2>Let's Have a Look<br>at <span>My Portfolio</span></h2>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-item-image">
+                        <img src="assets/succulene.png" alt="Succulène">
                     </div>
-                    <h3>Succulente - Artificial Plants Shop Website</h3>
-                    <p>Succulente is simple and user-friendly succulent plants web store. This website provides various types of artificial plants, gives users easy navigation to find their needs.</p>
-                    <a href="#" class="see-more">See More</a>
+                    <div class="portfolio-item-content">
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">UX/UI Design</span>
+                            <span class="portfolio-tag">Web Design</span>
+                        </div>
+                        <h3>Succulène - Artificial Plants Shop Website</h3>
+                        <p>Succulène is a website that sells artificial succulent plants with aesthetic and modern designs. The platform offers a practical green decoration solution without intensive maintenance. 🌿✨</p>
+                        <button class="see-more-btn">See More</button>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-item-image">
+                        <img src="assets/coolyeah.png" alt="CoolYeah Food">
+                    </div>
+                    <div class="portfolio-item-content">
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">UX/UI Design</span>
+                            <span class="portfolio-tag">App Design</span>
+                        </div>
+                        <h3>CoolYeah Food - Frozen Food Application</h3>
+                        <p>CoolYeah Food is a frozen food distribution application that provides practical products for individuals and culinary businesses.</p>
+                        <button class="see-more-btn">See More</button>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-item-image">
+                        <img src="assets/catnnect.png" alt="Catnnect">
+                    </div>
+                    <div class="portfolio-item-content">
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">UX/UI Visualization</span>
+                            <span class="portfolio-tag">Dashboard</span>
+                        </div>
+                        <h3>Catnnect - Analytic Dashboard</h3>
+                        <p>Catnnect analytics dashboard is an interactive web to visualize cat adoption data, displaying trends and statistics with interactive graphs and maps.</p>
+                        <button class="see-more-btn">See More</button>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-item-image">
+                        <img src="assets/talkyduck.png" alt="TalkyDuck">
+                    </div>
+                    <div class="portfolio-item-content">
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">Digital Marketing</span>
+                            <span class="portfolio-tag">Group Project</span>
+                        </div>
+                        <h3>TalkyDuck - Digital Marketing Project</h3>
+                       <p>TalkyDuck is a digital marketing project that aims to promote TalkyDuck products, a voice-based smart home innovation. The project included digital marketing strategies such as social media campaigns, interactive content creation, and brand awareness optimization to increase product traction and adoption in the market.</p>
+                        <button class="see-more-btn">See More</button>
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <!-- Project 2 -->
-            <div class="portfolio-card">
-                <div class="card-image">
-                    <img src="cooltrash.png" alt="CoolTrash Food Project">
+  <footer>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/logo.png" alt="Logo">
+                    <h3>Let's <span>Connect</span> With Zaa</h3>
                 </div>
-                <div class="card-content">
-                    <div class="tags">
-                        <span class="tag">UX/UI Design</span>
-                        <span class="tag">Web Design</span>
+                <div class="footer-sections">
+                    <div class="navigation">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="#moments">Moments</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
                     </div>
-                    <h3>CoolTrash Food - Frozen Food Application</h3>
-                    <p>CoolTrash Food is a frozen food distribution application that gives an excellent products for individuals of all walks to business.</p>
-                    <a href="#" class="see-more">See More</a>
+                    <div class="contact-info">
+                        <h4>Contact</h4>
+                        <p>+62 812 4346 6680</p>
+                        <p>zahiraay232@gmail.com</p>
+                        <p>Makassar, South Sulawesi</p>
+                    </div>
+                    <div class="newsletter">
+                        <h4>Get the latest information</h4>
+                        <div class="email-input">
+                            <input type="email" placeholder="Email Address">
+                            <button type="submit">➔</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>Copyright © 2025 Zahira. All Right Reserved.</p>
+                    <a href="#">User Terms & Condition</a>
                 </div>
             </div>
-
-            <!-- Project 3 -->
-            <div class="portfolio-card">
-                <div class="card-image">
-                    <img src="catnnect.png" alt="Catnnect Project">
-                </div>
-                <div class="card-content">
-                    <div class="tags">
-                        <span class="tag">UX/UI Visualization</span>
-                        <span class="tag">Dashboard</span>
-                    </div>
-                    <h3>Catnnect - Analytic Dashboard</h3>
-                    <p>Catnnect is a cat shop analytics dashboard that can analyze pet store data and provide insights to help make better business decisions.</p>
-                    <a href="#" class="see-more">See More</a>
-                </div>
-            </div>
-
-            <!-- Project 4 -->
-            <div class="portfolio-card">
-                <div class="card-image">
-                    <img src="talkyduck.png" alt="TalkyDuck Project">
-                </div>
-                <div class="card-content">
-                    <div class="tags">
-                        <span class="tag">Digital Marketing</span>
-                        <span class="tag">Social Project</span>
-                    </div>
-                    <h3>TalkyDuck - Digital Marketing Project</h3>
-                    <p>TalkyDuck is a digital marketing project of Bebek Restaurant. The project includes content creation, social media management, photography, videography, market research, strategy plan, and designed all the needs.</p>
-                    <a href="#" class="see-more">See More</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <!-- ... existing footer code ... -->
-    </footer>
+        </footer>
+    </main>
 </body>
 </html>
