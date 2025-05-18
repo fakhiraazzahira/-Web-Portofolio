@@ -2,5 +2,5 @@
 
 # Feedback 
 1. Card Blog terlalu padat - Cecilia Stefani
-2. Portofolio kurang huruf O - Rifat (saya tetap tidak ubah karena NavNar saya bahasa Inggris)
+2. Portofolio kurang huruf "o" - Rifat (saya tetap tidak ubah karena NavNar saya bahasa Inggris)
 3. Pemilihan Warna di placeholder, hero section masih kurang, & tambahkan background di tagline (Tech, Deauty, & Digital Trends) - Pak Hermanto
