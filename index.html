@@ -15,6 +15,9 @@
             <div class="logo">
                 <img src="assets/logo.png" alt="Logo">
             </div>
+            <div class="search-container">
+                <input type="text" class="search-bar" placeholder="Cari...">
+            </div>
             <ul class="nav-links">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -43,7 +46,7 @@
                 <p class="description">I'm Zahira! An undergraduate student of Digital Business. I have a passion for technology, beauty, and digital trends. Through this website, I share my projects, experiences, and thoughts about the dynamic world of beauty and business. Let's explore creativity and innovation together!</p>
                 <a href="about.html" class="contact-btn">About Me</a>
                 <div class="social-icons">
-                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/zahirazhh/"><i class="fab fa-instagram"></i></a>
                     <a href="https://x.com/zpshoon"><i class="fab fa-twitter"></i></a>
                     <a href="https://fzzahira.blogspot.com/"><i class="fab fa-blogger-b"></i></a>
                 </div>
@@ -95,5 +98,28 @@
             </div>
         </footer>
     </main>
+    <button class="back-to-top" id="backToTop">
+        ↑
+    </button>
+    
+    <script>
+    // Back to Top Button Functionality
+    const backToTop = document.getElementById('backToTop');
+    
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            backToTop.classList.add('visible');
+        } else {
+            backToTop.classList.remove('visible');
+        }
+    });
+    
+    backToTop.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+    </script>
 </body>
 </html>

@@ -25,6 +25,58 @@ h1, h2, h3, h4 {
     font-family: 'Kanit', sans-serif;
 }
 
+/* Search Bar Styles */
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+    margin-right: auto;
+}
+
+.search-bar {
+    padding: 8px 12px;
+    border: 1px solid var(--secondary-brown);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    color: var(--primary-dark);
+    font-size: 0.9rem;
+    width: 200px;
+    transition: all 0.3s ease;
+}
+
+.search-bar:focus {
+    outline: none;
+    border-color: var(--primary-coral);
+    box-shadow: 0 0 5px rgba(225, 140, 140, 0.3);
+    width: 220px;
+}
+
+/* Navbar Layout Adjustment */
+nav {
+    display: flex;
+    align-items: center;
+    padding: 1rem 5%;
+}
+
+.logo {
+    margin-right: 1rem;
+}
+
+.nav-links {
+    margin-left: auto;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .search-container {
+        margin-left: 1rem;
+    }
+    
+    .search-bar {
+        width: 150px;
+    }
+}
+
 /* Navbar Styles */
 nav {
     position: fixed;
@@ -81,6 +133,57 @@ html {
 .logo img {
     max-width: 60px;  /* Mengatur lebar maksimum logo */
     height: auto;     /* Menjaga aspek rasio gambar */
+}
+
+
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: var(--primary-coral);
+    color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+}
+
+.back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.back-to-top:hover {
+    background: var(--secondary-brown);
+    transform: translateY(-3px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .search-container {
+        margin-right: 1rem;
+    }
+    
+    .search-bar {
+        width: 150px;
+    }
+    
+    .back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+    }
 }
 
 /* Hero Section */
@@ -296,42 +399,31 @@ html {
 
 /* About Page Styles */
 .about-page {
-    padding: 4rem 5%;
+  padding: 4rem 5%;
+  background-color: #d9e6f7; /* Sesuaikan dengan variabel --primary-light */
 }
 
-.about-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-}
-
-/* About Header */
 .about-header {
-    text-align: center;
-    position: relative;
-    margin-bottom: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .about-header h2 {
-    font-size: 2.2rem;
-    color: var(--primary-dark);
-    margin-bottom: 0.5rem;
-    text-transform: capitalize;
-    letter-spacing: 0.02em;
-    line-height: 1.2;
-}
-
-.about-header span {
-    color: var(--primary-coral);
-    text-transform: capitalize;
+  font-size: 2.2rem;
+  color: #2B3A4B; /* Sesuaikan dengan --primary-dark */
+  font-family: 'Kanit', sans-serif;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
 }
 
 .about-header .highlight {
-    color: var(--primary-coral);
-    position: relative;
+  color: #E18C8C; /* Sesuaikan dengan --primary-coral */
+  font-weight: 700;
 }
+
 
 .about-header .highlight::after {
     content: '';
@@ -792,20 +884,9 @@ html {
     }
 }
 
-/* Konsistensi Section untuk Semua Halaman */
-.portfolio-section,
-.blog-section,
-.moments-section,
-.about-section,
-.contact-section {
-    padding: 2rem 5%;
-    min-height: auto;
-}
+
 
 /* Specific background colors for each section */
-.moments-section {
-    background-color:  #d9e6f7;
-}
 
 .blog-section,
 .about-section,
@@ -933,6 +1014,16 @@ html {
     }
 }
 
+/* Konsistensi Section untuk Semua Halaman */
+.portfolio-section,
+.blog-section,
+.moments-section,
+.about-section,
+.contact-section {
+    padding: 4rem 5%;
+    min-height: auto;
+}
+
 /* Konsistensi Header untuk Semua Halaman */
 .portfolio-header,
 .blog-header,
@@ -953,7 +1044,7 @@ html {
     font-weight: 800;
     color: var(--primary-dark);
     line-height: 1.3;
-    margin-bottom: 0.5rem;
+    margin-bottom: 3rem;
 }
 
 .portfolio-header h2 span,
@@ -964,53 +1055,8 @@ html {
     color: var(--primary-coral);
 }
 
-/* Konsistensi Section untuk Semua Halaman */
-.portfolio-section,
-.blog-section,
-.moments-section,
-.about-section,
-.contact-section {
-    padding: 2rem 5%;
-    min-height: auto;
-}
-
-/* Specific background colors for each section */
-.moments-section {
-    background-color: var(--secondary-pink);
-}
-
-.blog-section,
-.about-section,
-.contact-section {
-    background-color: var(--primary-light);
-}
-
-.portfolio-section {
-    background-color: var(--accent-cream);
-}
-
-/* Konsistensi Container untuk Semua Halaman */
-.portfolio-content,
-.blog-content,
-.moments-content,
-.about-content,
-.contact-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem 5%;
-}
-
-/* Responsive Design yang Konsisten */
+/* Responsive */
 @media (max-width: 992px) {
-    .portfolio-header h2,
-    .blog-header h2,
-    .moments-header h2,
-    .about-header h2,
-    .contact-header h2 {
-        font-size: 2rem;
-        font-weight: 800;
-    }
-    
     .portfolio-section,
     .blog-section,
     .moments-section,
@@ -1019,7 +1065,6 @@ html {
         padding: 2rem 4%;
     }
 }
-
 @media (max-width: 768px) {
     .portfolio-section,
     .blog-section,
@@ -1028,7 +1073,6 @@ html {
     .contact-section {
         padding: 1.5rem 3%;
     }
-    
     .portfolio-header,
     .blog-header,
     .moments-header,
@@ -1125,11 +1169,6 @@ main {
 }
 
 /* Contact Page Specific Styles */
-.contact-section {
-    background: var(--primary-light);
-    padding: 4rem 5%;
-    min-height: 80vh;
-}
 
 .contact-title {
     text-align: center;
@@ -1455,4 +1494,12 @@ footer {
     .contact-info p {
         font-size: 0.7rem;
     }
+}
+
+.moments-section {
+    background-color: var(--accent-cream); /* Sama seperti portfolio-section */
+}
+
+.moments-gallery {
+    background-color: var(--accent-cream); /* Opsional, jika ingin galeri juga sama */
 }

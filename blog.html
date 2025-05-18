@@ -12,9 +12,13 @@
 <body>
     <!-- Navigation -->
     <nav>
-        <div class="logo">
-            <img src="assets/logo.png" alt="Logo Zaa" />
-        </div>
+            <div class="logo">
+                <img src="assets/logo.png" alt="Logo">
+            </div>
+            <div class="search-container">
+                <input type="text" class="search-bar" placeholder="Cari...">
+            </div>
+            </div>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -106,5 +110,28 @@
             <a href="#">User Terms & Conditions</a>
         </div>
     </footer>
+        <button class="back-to-top" id="backToTop">
+        ↑
+    </button>
+    
+    <script>
+    // Back to Top Button Functionality
+    const backToTop = document.getElementById('backToTop');
+    
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            backToTop.classList.add('visible');
+        } else {
+            backToTop.classList.remove('visible');
+        }
+    });
+    
+    backToTop.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+    </script>
 </body>
 </html>

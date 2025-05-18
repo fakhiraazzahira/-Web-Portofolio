@@ -12,9 +12,12 @@
 <body>
     <!-- Navbar -->
     <nav class="navbar">
-        <div class="logo">
-            <img src="assets/logo.png" alt="With Zaa Logo" />
-        </div>
+            <div class="logo">
+                <img src="assets/logo.png" alt="Logo">
+            </div>
+            <div class="search-container">
+                <input type="text" class="search-bar" placeholder="Cari...">
+            </div>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -27,9 +30,11 @@
 
     <!-- Contact Section -->
     <main>
-    <div class="contact-header">
-        <h2>Let's Create <span>Something Amazing Together!</span></h2>
-    </div>
+        <section class="contact-section">
+        <div class="contact-header">
+            <h2>Contact <span>Me</span></h2>
+        </div>
+        </section>
 
         <section class="contact-container">
             <form class="contact-form">
@@ -127,5 +132,28 @@
                 </div>
             </div>
         </footer>
+            <button class="back-to-top" id="backToTop">
+        ↑
+    </button>
+    
+    <script>
+    // Back to Top Button Functionality
+    const backToTop = document.getElementById('backToTop');
+    
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            backToTop.classList.add('visible');
+        } else {
+            backToTop.classList.remove('visible');
+        }
+    });
+    
+    backToTop.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+    </script>
 </body>
 </html>
