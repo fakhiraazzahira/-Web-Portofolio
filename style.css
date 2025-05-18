@@ -136,6 +136,7 @@ html {
   line-height: 1.2;
 }
 
+
 .description {
   margin-bottom: 2rem;
   line-height: 1.6;
@@ -705,12 +706,15 @@ html {
 }
 
 /* Responsive */
-@media (max-width: 700px) {
+@media (max-width: 768px) {
     .blog-list {
-        padding: 0 1rem;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 1rem;
     }
+    
     .blog-card img {
-        height: 140px;
+        height: 200px;
     }
 }
 
@@ -757,34 +761,39 @@ html {
     font-weight: 700;
 }
 .blog-list {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 2.5rem;
-    align-items: center;
-    max-width: 600px;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 2rem;
 }
 .blog-card {
     background: #8C7373;
     border-radius: 16px;
     overflow: hidden;
-    width: 100%;
-    box-shadow: 0 4px 24px rgba(44,62,80,0.08);
+    height: 100%;
     display: flex;
     flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 32px rgba(44,62,80,0.15);
 }
 .blog-card img {
     width: 100%;
-    height: 180px;
+    height: 220px;
     object-fit: cover;
-    background: #fff;
 }
 .blog-card-content {
-    padding: 1.5rem;
+    padding: 1.8rem;
     color: #fff;
+    flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 0.8rem;
+    gap: 1rem;
 }
 .blog-tags {
     display: flex;
@@ -808,15 +817,24 @@ html {
     font-weight: 500;
 }
 .blog-card-content h3 {
-    font-size: 1.1rem;
-    font-weight: 700;
-    margin-bottom: 0.3rem;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
     color: #fff;
+    font-weight: 700;
 }
 .blog-card-content p {
-    font-size: 0.97rem;
+    font-size: 0.95rem;
     color: #f2f2f2;
     line-height: 1.6;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 /* Footer */
@@ -829,12 +847,15 @@ html {
 }
 
 /* Responsive */
-@media (max-width: 700px) {
+@media (max-width: 768px) {
     .blog-list {
-        padding: 0 1rem;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 1rem;
     }
+    
     .blog-card img {
-        height: 140px;
+        height: 200px;
     }
 }
 
@@ -1192,24 +1213,46 @@ main {
 .social-icons {
     display: flex;
     gap: 16px;
-    margin-top: 2px;
+    margin-top: 15px;
 }
 
 .social-icons a {
     color: #fff;
-    font-size: 1.28rem;
-    background: #2b3a4b;
-    border-radius: 6px;
-    padding: 7px 9px;
-    display: inline-flex;
+    background: var(--primary-dark);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
     align-items: center;
-    transition: background 0.2s, color 0.2s;
+    justify-content: center;
     text-decoration: none;
+    transition: all 0.3s ease;
 }
 
 .social-icons a:hover {
-    background: #fff;
-    color: #e18c8c;
+    background: var(--primary-coral);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(225,140,140,0.2);
+}
+
+.social-icons i {
+    font-size: 1.2rem;
+}
+
+/* Stay Connected Section */
+.stay-connected {
+    background: var(--primary-coral);
+    color: white;
+    border-radius: 14px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.stay-connected h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: white;
 }
 
 /* Responsive */
@@ -1318,23 +1361,32 @@ footer {
 }
 
 .email-input input {
-    padding: 0.5rem 1rem;
+    width: 100%;
+    padding: 12px 16px;
     border: none;
-    border-radius: 4px;
-    background-color: var(--primary-coral);
-    color: white;
-    font-size: 0.8rem;
-    width: 180px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    background: #C97972;
+    color: #fff;
+}
+
+.email-input input::placeholder {
+    color: #fbeee6;
+    opacity: 1;
 }
 
 .email-input button {
-    padding: 0.5rem 1rem;
+    background: #D9D9D9;
+    color: #1e1c1c;
     border: none;
-    border-radius: 4px;
-    background-color: white;
-    color: var(--primary-dark);
+    border-radius: 8px;
+    padding: 12px 20px;
     cursor: pointer;
-    font-size: 0.8rem;
+    transition: background 0.3s ease;
+}
+
+.email-input button:hover {
+    background: #c76d6d;
 }
 
 .footer-bottom {
